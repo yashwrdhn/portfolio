@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap');
+
+* {
+   
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    background-color:#333;
+    color:#ccc;
+    font-size:18px;
+    line-height: 1.6;
+}
+
+:root {
+    --text-color: #00aa00;
+}
+
+h1 {
+    color:var(--text-color);
+    font-size: 50px;
+    letter-spacing: -5px;
+    margin-bottom: 20px;
+}
+
+h2{
+    color:var(--text-color);
+
+}
+
+ul{
+
+    list-style-type: none;
+}
+
+nav{
+    width:30%;
+
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    color:var(--text-color);
+    cursor:pointer;    
+}
+
+
+h3{
+    margin-bottom: 10px;
+}
+
+a{
+    color:var(--text-color);
+    text-decoration: none;
+}
+p{
+    margin:20px 0; 
+}
+.container{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction: column;   
+    height:70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.wb-body{
+    background:#111;
+    padding:20px;
+}
+.hidden{
+    display: none;
+}
+
+.cursor {
+    font-weight: 700;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from,to{
+        color:transparent;
+    }
+
+    50% {
+        color: var(--text-color);
+    }
+}
+
+
+.line {
+    position: relative;
+    width:24em;
+    margin:0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+
+.anim-typewriter{
+    
+    animation:typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500mx steps(40) infinite normal;
+}
+
+
+@keyframes typewriter{
+    from{
+        width:0;
+    }
+    to {
+        width:16em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255,255,255,0.75);
+    }
+    to{
+        border-right-color:transparent;
+    }
+}
