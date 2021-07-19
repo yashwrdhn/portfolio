@@ -42,7 +42,7 @@ nav{
 }
 nav ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 nav ul li {
@@ -60,14 +60,14 @@ a{
     text-decoration: none;
 }
 p{
-    margin:20px 0; 
+    margin:15px 0; 
 }
 .container{
-    max-width:600px;
+    max-width:700px;
     margin:auto;
     display:flex;
     flex-direction: column;   
-    height:70vh;
+    height:90vh;
     justify-content: center;
     align-items: center;
 }
@@ -105,21 +105,7 @@ p{
     
 }
 
-.anim-typewriter{
-    
-    animation:typewriter 4s steps(40) 1s 1 normal both,
-    blinkTextCursor 500mx steps(40) infinite normal;
-}
 
-
-@keyframes typewriter{
-    from{
-        width:0;
-    }
-    to {
-        width:16em;
-    }
-}
 
 @keyframes blinkTextCursor {
     from {
